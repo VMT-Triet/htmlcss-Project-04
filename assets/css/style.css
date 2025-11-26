@@ -5,6 +5,7 @@
 :root {
     --primary-color: #ff5b2e;
     --heading-color: #000958;
+    --desc-color: #656689;
     --font-heading: Sora, "sans-serif";
     --background-light: #fffaf5;
     --background-dark: #fff6ed;
@@ -17,6 +18,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Poppins, "sans-serif";
+    background: var(--background-light);
 }
 
 /* Common */
@@ -45,10 +47,21 @@ a {
     margin-right: auto;
 }
 
-/* Header */
-.header {
-    background: var(--background-light);
+.heading1 {
+    color: var(--heading-color);
+    font-family: var(--font-heading);
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
 }
+
+.desc {
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    line-height: 1.86;
+}
+
+/* Header */
 
 .header__body {
     padding: 25px 0;
@@ -92,4 +105,192 @@ a {
 
 .header__SignUp-btn:hover {
     opacity: 0.6;
+}
+
+/* Hero */
+.hero {
+    margin-top: 75px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero__media {
+    display: flex;
+    position: relative;
+    padding-bottom: 94px;
+    width: 52%;
+}
+
+.hero__media-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    background: #fe997b;
+    border: 3px solid #fff;
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor-right {
+    top: 17px;
+    right: -43px;
+}
+
+.hero__decor-left {
+    left: -58px;
+    bottom: 10px;
+}
+
+.hero__media-wrap-small {
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    margin-left: -23px;
+    margin-bottom: -58px;
+    border-radius: 16px;
+    background: #faa7ad;
+    border: 2px solid #f9d7db;
+    z-index: 1;
+}
+
+.hero__lits {
+    position: absolute;
+    left: 129px;
+    bottom: 0;
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    z-index: 1;
+}
+
+.hero-list-item {
+    display: flex;
+}
+
+.hero-list-item__info {
+    margin-left: 10px;
+}
+
+.hero-list-item__thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fec23f;
+    object-fit: cover;
+}
+
+.hero-list-item:nth-of-type(2) .hero-list-item__thumb {
+    background: #c6e2fa;
+}
+
+.hero-list-item__title {
+    color: #181e52;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-list-item__skeleton {
+    margin-top: 6px;
+    width: calc(var(--with, 118px));
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: var(--heading-color);
+}
+
+.hero-list-item__rectaganle {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    background: #f2f2f2;
+}
+
+/* Hero content */
+.hero__content {
+    margin-left: 120px;
+}
+
+.hero__heading {
+    width: 517px;
+}
+
+.hero__desc {
+    margin-top: 24px;
+    width: 391px;
+}
+
+.hero-row {
+    margin-top: 38px;
+}
+
+.hero-row__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 189px;
+    padding: 18px 0;
+    transition: all 0.2s;
+}
+
+.hero-row__btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+    box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.hero-row__arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.hero-row__btn:hover .hero-row__arrow {
+    color: var(--primary-color);
+    background: #fff;
+}
+
+.hero-row__cta {
+    margin-left: 24px;
+    color: var(--heading-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.hero-row__cta:hover {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 }
