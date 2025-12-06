@@ -463,3 +463,162 @@ a {
     top: -36px;
     right: -35px;
 }
+
+/* Features */
+.feature {
+    margin-top: 93px;
+    padding: 16px 0 55px;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fearture__media-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 458px;
+    height: 500px;
+    border-radius: 18px;
+    border: 2px solid #fff;
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    box-shadow: 0 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.feature__img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    /* box-shadow: 0 3px 63px 0 rgba(153, 183, 208, 0.59); */
+    object-fit: cover;
+}
+
+.feature__decor {
+    position: absolute;
+}
+
+.feature__decor-1 {
+    right: -42px;
+    bottom: -55px;
+}
+
+.feature__decor-2 {
+    top: -16px;
+    right: 13px;
+}
+
+.feature__decor-3 {
+    top: 33px;
+    right: -21px;
+}
+
+.feature__decor-4 {
+    top: 13px;
+    right: 63px;
+}
+
+.feature__decor-5 {
+    top: 268px;
+    right: -33px;
+}
+
+.feature__decor-6 {
+    right: 19px;
+    bottom: 150px;
+}
+
+/* Feature Content */
+.feature__content {
+    width: 49%;
+}
+
+.feature__desc {
+    margin: 24px 0 52px;
+    width: 511px;
+}
+
+.tab__list {
+    position: relative;
+    display: flex;
+    column-gap: 56px;
+}
+
+.tab__list::after,
+.tab__item-active::after,
+.tab__content-more::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    border-radius: 1px;
+    background: var(--primary-color);
+    opacity: 0.07;
+}
+
+.tab__item-active::after {
+    width: 95px;
+    opacity: 1;
+}
+
+.tab__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.tab__icon {
+    width: 20px;
+}
+
+.tab__title {
+    color: #48496a;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.tab__content {
+    padding-top: 36px;
+}
+
+.tab__content-item {
+    display: none;
+}
+
+.tab__content-item--active {
+    display: block;
+}
+
+.tab__content-desc {
+    width: 391px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.tab__content-more {
+    position: relative;
+    display: inline-block;
+    padding-top: 32px;
+    color: #ff5d31;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: 5px;
+}
+
+.tab__content-more::after {
+    opacity: 1;
+    height: 1.5px;
+}
