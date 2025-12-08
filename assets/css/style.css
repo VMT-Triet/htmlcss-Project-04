@@ -663,11 +663,22 @@ a {
 }
 
 .services-item__heading {
+    position: relative;
+    padding-left: 12px;
     color: #000958;
     font-family: var(--font-heading);
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1;
+}
+
+.services-item__heading::before {
+    position: absolute;
+    display: inline-block;
+    inset: 0 auto 0 0;
+    content: "";
+    width: 2px;
+    background: linear-gradient(#ff5b2e 0.39%, #ffa187 100.29%);
 }
 
 .services-item__desc {
